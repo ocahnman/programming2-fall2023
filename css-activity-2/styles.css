@@ -1,0 +1,31 @@
+.odd {
+	background-color: rgb(255,204,203);
+	font-family: Verdana. "Deja Vu Sans", sans-serif;
+	
+}
+
+.big-font, .three {
+	font-size: 24px;
+}
+
+#two {
+	font-size: 36px;
+	color: rgb(0, 0, 255, 1.0);
+}
+
+#four {
+	background-color: rgb(144,238,144);
+	font-size: 24px;
+	font-weight: bold;
+}
+.new-border {
+	border-style: dotted;
+	border-width: 3px;
+}
+
+.cool-font {
+	font-family: 'Amatic SC';
+	font-size: 40px;
+	border-color: pink;
+}
+
