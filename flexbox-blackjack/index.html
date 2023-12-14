@@ -1,68 +1,99 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="styles.css">
-    <title>Blackjack</title>
-</head>
-<body>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Oliver's Bountiful Blackjack
+        </title>
+        <link rel="stylesheet" type="text/css" href="styles.css">
+    </head>
+    <body>
+        <div id="parent">
+            <div id="header">
+                <div id="title">
+                    <p id="cool_name"> Oliver's Bountiful Blackjack + Casino</p>
+                    <img src="images/Logo.jpg" alt=" logo" width="400" height="300">
+                </div>
+            </div> 
+           <div id="upper">
+                <div id="info-box">
+                    PLAYERS TURN
+                </div>
+               
+            </div> 
+            <div id="flex-container">
+                <div id="player">
+                    <div class="name">
+                        PLAYER
+                    </div>
+                    <div class="cards">
+                       <div class = "cards-top">
+                            <div class="card" >
+                                <center><img id = "pcard1" src="images/blank.svg"></center>
+                            </div>
+                            <div class="card" >
+                                <center><img id = "pcard2" src="images/blank.svg"></center>
+                            </div>
+                        </div>
+                        <div class = "cards-bottom">
+                            <div class="card" >
+                                 <center><img id = "pcard3" src="images/blank.svg"></center>
+                            </div>
+                            <div class="card" >
+                                 <center><img id = "pcard4" src="images/blank.svg"></center>
+                            </div>
+                        </div>
+                    </div>
+                    <div class ="score" id = "playerScore">
+                        # Score: 0
+                    </div>
+                </div>
 
-<div class="large">
-    <div class="header"> 
-        Oliver Cahnmans Bountiful Blackjack
-    </div>
-
-    <div class="blackjack">
-        <div class="turn"> 
-            <div class="subheader"> 
-                Turn: 
+                 <div id="upper">
+                    <div id="header">
+               
             </div>
-        </div>
-
-        <div class="dealer"> 
-            <div class="subheader">
-                Dealer 
-            </div>
-
-            <div class="cards">
-                <img class="images" src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/01_of_spades_A.svg/1200px-01_of_spades_A.svg.png" alt="01 of spades">
-                <img class="images" src="https://i.pinimg.com/originals/99/30/86/9930867145e433c8fe41267e526429c4.png" alt="Image">
-                <img class="images" src="https://upload.wikimedia.org/wikipedia/commons/7/70/Poker-sm-233-Qd.png" alt="Image">
-            </div>
-
-            <div class="counter">
-                <div class="subheader">
-                    Score: 
+                
+                </div>
+                <div id="dealer-image">
+                    <center><img id = "dealerImage" src="images/dealer.jpg"width="300" height="300"></center>
+                <div id="info-box">
+                    
                 </div>
             </div>
-        </div>
-        
-        <div class="player"> 
-            <div class="subheader">
-                Player
-            </div>
-
-            <div class="cards">
-                <img class="images" src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/01_of_spades_A.svg/1200px-01_of_spades_A.svg.png" alt="01 of spades">
-                <img class="images" src="https://i.pinimg.com/originals/99/30/86/9930867145e433c8fe41267e526429c4.png" alt="Image">
-                <img class="images" src="https://upload.wikimedia.org/wikipedia/commons/7/70/Poker-sm-233-Qd.png" alt="Image">
-            </div>
-
-            <div class="counter">
-                <div class="subheader">
-                    Score: 
+                <div id="dealer">
+                    <div class="name">
+                        DEALER
+                    </div>
+                    <div class="cards">
+                       <div class = "cards-top">
+                            <div class="card" >
+                                <center><img id = "dcard1" src="images/blank.svg"></center>
+                            </div>
+                            <div class="card" >
+                                <center><img id = "dcard2" src="images/blank.svg"></center>
+                            </div>
+                        </div>
+                        <div class = "cards-bottom">
+                            <div class="card" >
+                                 <center><img id = "dcard3" src="images/blank.svg"></center>
+                            </div>
+                            <div class="card" >
+                                 <center><img id = "dcard4" src="images/blank.svg"></center>
+                            </div>
+                        </div>
+                    </div>
+                    <div class ="score" id = "dealerScore">
+                        # Score: 0
+                    </div>
                 </div>
             </div>
-
-            <div class="actions"> 
-                <div class="decision"> <button> Hit </button> </div>
-                <div class="decision"> <button> Stand </button> </div>
-                <div class="decision"> <button> Reset </button></div>
-            </div>	
+            <div id="options">
+                <button id="hit" onclick = "hit()" disabled = "true" >HIT</button>
+                <button id="stand" onclick = "stand()" disabled = "true" >STAND</button>
+                <button id="reset" onclick = "reset()">RESET</button>
+            </div>
         </div>
-    </div>
-</div>
-
-</body>
+        <script type="text/javascript" src="script.js"></script>
+    </body>
 </html>
