@@ -1,0 +1,141 @@
+* {
+     background-color: #0E1C36;
+     color: silver;
+     font-family: "Times New Roman", sans-serif;
+     box-sizing: border-box;
+}
+ #nba-stat-container {
+     background-color: #0E1C36;
+     padding: 20px;
+     border-radius: 10px;
+     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+     max-width: 400px;
+     margin: 20px auto;
+     text-align: center;
+}
+ #nba-stat-container label {
+     color: silver;
+     font-size: 18px;
+     margin-bottom: 10px;
+     display: block;
+}
+ #LOGO {
+     width: 200px;
+     height: 200px;
+}
+ .header {
+     background-color: black;
+     color: red;
+     padding: 10px 0;
+     text-align: center;
+     font-size: 28px;
+     font-weight: bold;
+}
+ .footer {
+     background-color: black;
+     color: red;
+     padding: 10px 0;
+     text-align: center;
+     font-size: 16px;
+     bottom: 0;
+     width: 100%;
+}
+ #nba-stat-container input {
+     padding: 10px;
+     margin-top: 5px;
+     border-radius: 5px;
+     border: 1px solid #7A918D;
+     background-color: #264653;
+     color: #FFFFFF;
+     font-size: 16px;
+}
+ 
+ body {
+     margin: 0;
+     padding: 0;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     .menu-container {
+         width: 100%;
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+         margin-bottom: 20px;
+    }
+     .header, .footer {
+         display: flex;
+         align-items: center;
+         justify-content: center;
+         font-size: 24px;
+         padding: 5px 20px;
+         width: 100%;
+         border: 2px solid #7A918D;
+    }
+     .nba-stat-container {
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+         width: 80%;
+         max-width: 800px;
+    }
+     .images {
+         width: 100%;
+         height: auto;
+    }
+     .images-portrait {
+         width: 125px;
+         height: 187.5px;
+    }
+     .output-container {
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+         padding: 20px;
+         border: 2px dotted white;
+         width: 100%;
+    }
+     .player-info {
+         display: flex;
+         justify-content: space-around;
+         width: 100%;
+         padding: 20px;
+         border-bottom: 2px dotted white;
+    }
+     .player-stuff {
+         font-size: 36px;
+    }
+     table {
+         width: 100%;
+         border-collapse: collapse;
+         text-align: center;
+    }
+     th, td {
+         border: 1px solid #7A918D;
+         padding: 4px;
+    }
+     th {
+         background-color: #9E0031;
+         color: white;
+    }
+     tr:hover {
+         background-color: #ddd;
+    }
+     #crucial-data, #secondary-stats {
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+         width: 100%;
+         padding: 20px;
+         border: 2px dotted white;
+    }
+     #team-info, #main-stats {
+         display: flex;
+         justify-content: space-around;
+         width: 100%;
+    }
+     .slash-header, .slash-output {
+         display: flex;
+         align-items: center;
+    }
+     

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>NBA Player Stats</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <div class="header">
+            <h1>NBA Player Statistics</h1>
+        </div>
+        <div id="nba-stat-container">
+            <label for="playerselect">Which Player do you want to see:</label>
+            <input list="players" id="playerselect" name="playerselect" placeholder="type here..." />
+            <datalist id="players">
+            </datalist>
+        </div>
+        <div class="output-container">
+            <div class="player-info">
+                <div class="player-stuff">
+                    <p id="NAME">Name </p>
+                </div>
+                <div class="player-stuff">
+                    <p id="POS" > Pos</p>
+                </div>
+                <div class="player-stuff">
+                    <p id="AGE" > Age </p>
+                </div>
+            </div>
+            <div id="crucial-data">
+                <div id="team-info">
+                    <div id="portrait"> 
+                        <img class="images-portrait" id="IMAGE" src="" width="120px" height="120px">
+                    </div>
+                    <div id="player-team"> 
+                        <img id="LOGO" src="" alt="Team" >
+                    </div>
+                </div>
+                <div id="main-stats">
+                    <table>
+                        <tr>
+                            <th>PTS</th>
+                            <th>RBS</th>
+                            <th>AST</th>
+                        </tr>
+                        <tr>
+                            <td id="PPG">x</td>
+                            <td id="RPG">x</td>
+                            <td id="APG">x</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <div id="secondary-stats">
+                <!-- <table> Learned from: https://www.w3schools.com/html/html_tables.asp -->       
+                <table>
+                    <tr>
+                        <th>GP</th>
+                        <th>MPG</th>
+                        <th>USG%</th>
+                        <th>TO%</th>
+                        <th>FTA</th>
+                        <th>FT%</th>
+                        <th>2PA</th>
+                        <th>2P%</th>
+                        <th>3PA</th>
+                        <th>3P%</th>
+                    </tr>
+                    <tr>
+                        <td id="GP">x</td>
+                        <td id="MPG">x</td>
+                        <td id="USG%">x</td>
+                        <td id="TO%">x</td>
+                        <td id="FTA">x</td>
+                        <td id="FT%">x</td>
+                        <td id="2PA">x</td>
+                        <td id="2P%">x</td>
+                        <td id="3PA">x</td>
+                        <td id="3P%">x</td>
+                    </tr>
+                </table>
+                <table>
+                    <tr>
+                        <th>eFG%</th>
+                        <th>TS%</th>
+                        <th>SPG</th>
+                        <th>BPG</th>
+                        <th>TPG</th>
+                        <th>P+R</th>
+                        <th>P+A</th>
+                        <th>P+R+A</th>
+                        <th>VI</th>
+                        <th>ORtg</th>
+                        <th>DRtg</th>
+                    </tr>
+                    <tr>
+                        <td id="eFG%">x</td>
+                        <td id="TS%">x</td>
+                        <td id="SPG">x</td>
+                        <td id="BPG">x</td>
+                        <td id="TPG">x</td>
+                        <td id="P+R">x</td>
+                        <td id="P+A">x</td>
+                        <td id="P+R+A">x</td>
+                        <td id="VI">x</td>
+                        <td id="ORtg">x</td>
+                        <td id="DRtg">x</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        </div>
+        <div class="footer">
+            <p>© 2024 NBA Stats Inc. All rights reserved.</p>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>
